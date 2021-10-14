@@ -1,4 +1,4 @@
-def myfun3(numbers):
+'''def myfun3(numbers):
     """This is where i describe what the function does.
     
     Args:
@@ -19,4 +19,13 @@ number1 = int(input("Enter first number:"))
 number2 = int(input("Enter second number:"))
 numbers = [number1, number2]
 
-myfun3(numbers)
+myfun3(numbers)'''
+
+def myfunc4 ():
+  name = str(input("Enter two words: "))
+  lit = name.split()
+  if ((list(lit[0])[0]) == (list(lit[1])[0])):
+    print("TRUE")
+  else:
+    print("False")
+myfunc4()
