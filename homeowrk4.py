@@ -1,13 +1,22 @@
-def myfunc3 ():
-  num = int(input("Enter a number: "))
-  num1 = int(input("Enter another number: "))
-  if ((num %2 ==0), (num1 %2 ==0)): #even
-    print (num, num1)
-    print (min(num, num1))
-  elif ((num %2 !=0), (num1 %2 !=0)): #odd
-    print ("hi")
-    print(max(num, num1))
-  else: 
-    print("hi")
-    #print (max(num, num1))
-myfunc3 ()
+def myfun3(numbers):
+    """This is where i describe what the function does.
+    
+    Args:
+        numbers: Numbers entered by the user.
+    
+    """
+
+    if (numbers[0] %2 == 0) and (numbers[1] %2 == 0) : # Even
+        print(numbers)
+        print(min(numbers))
+    elif (numbers[0] %2 != 0) and (numbers[1] %2 != 0): # Odd
+        print(numbers)
+        print(max(numbers))
+    else:
+        print("I dont like numbers")
+
+number1 = int(input("Enter first number:"))
+number2 = int(input("Enter second number:"))
+numbers = [number1, number2]
+
+myfun3(numbers)
