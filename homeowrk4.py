@@ -1,4 +1,4 @@
-def myfunc2 (blackjack, black, jack):
+"""def myfunc2 (blackjack, black, jack):
     print(blackjack,black,jack)
     sum = blackjack+black+jack
     if blackjack == 11 or black == 11 or jack == 11 and sum > 21:
@@ -12,4 +12,11 @@ def myfunc2 (blackjack, black, jack):
         print("Error")
 print(myfunc2 (11,3,2))
 print(myfunc2 (1,2,3))
-print(myfunc2(10,9,9))
+print(myfunc2(10,9,9))"""
+
+def myfunc3 (numbers):
+    print (numbers)
+    start = numbers.index(6)
+    end = numbers.index(9)
+   
+print (myfunc3([1,2,6,7,9]))
