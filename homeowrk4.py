@@ -16,7 +16,16 @@ print(myfunc2(10,9,9))"""
 
 def myfunc3 (numbers):
     print (numbers)
-    start = numbers.index(6)
-    end = numbers.index(9)
+    totalSum = 0
+    flag = False
+    for x in numbers:
+        if(x == 6):
+            flag = True
+        elif (x == 9 and flag == True):
+            flag = False
+        elif (flag == False):
+            totalSum = totalSum + x
+    print(totalSum)
+
    
 print (myfunc3([1,2,6,7,9]))
